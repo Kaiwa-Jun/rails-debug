@@ -3,7 +3,9 @@ class TasksController < ApplicationController
 
   # GET /tasks
   def index
-    @tasks = Task.all
+    puts "called index"
+    @tasks = Task.all # ここを変更
+    puts "@task: #{@tasks.inspect}"
   end
 
   # GET /tasks/1
